@@ -1,0 +1,59 @@
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class UIController : MonoBehaviour
+{
+    private int time = 0;
+    public TMP_Text timer;
+    public TMP_Text highscore;
+    public GameObject Trigger;
+    bool temas = false;
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("Highscore") == true)
+        {
+            highscore.text = PlayerPrefs.GetInt("Highscore").ToString();
+        }
+        else
+        {
+            highscore.text = "No High Scores Yet";
+        }
+        StartTimer();
+    }
+
+    public void StartTimer()
+    {
+        time = 0;
+        InvokeRepeating("IncrimentTime", 1, 1);
+    }
+
+    public void OnColliderEnter(Collider other)
+    {
+        if (other.gameObject.tag == "GateWay")
+        {
+            temas = true;
+        }
+    }
+    private void Update()
+    {
+        if (temas == true)
+        {
+            Time.timeScale = 0f;
+        }
+
+    }
+    public void SetHighscore()
+    {
+        PlayerPrefs.SetInt("Highscore", time);
+        highscore.text = PlayerPrefs.GetInt("Highscore").ToString();
+
+    }
+
+
+    void IncrimentTime()
+    {
+        time += 1;
+        timer.text = "Time: " + time;
+    }
+}

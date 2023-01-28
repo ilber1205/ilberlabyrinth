@@ -1,0 +1,64 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
+public class UIController : MonoBehaviour
+{
+    private float sayac = 0;
+    public TMP_Text timer;
+    public TMP_Text highscore;
+    bool sayacDevamEdiyorMu = true;
+    [SerializeField] int Levelnumber;
+    private int levelscore;
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("Highscore") == true)
+        {
+            highscore.text = PlayerPrefs.GetFloat("Highscore").ToString("F2");
+        }
+        else
+        {
+            highscore.text = "No High Scores Yet";
+        }
+        if (PlayerPrefs.HasKey("Highscore") == false)
+        {
+            PlayerPrefs.SetFloat("Highscore", 50000);
+        }
+    }
+    public void Ilber()
+    {
+        StopTimer();
+    }
+    public void SaveHighScore()
+    {
+        PlayerPrefs.SetFloat("highscore" + Levelnumber, levelscore);
+    }    
+    public void StopTimer()
+    {
+        sayacDevamEdiyorMu = false;
+        if (PlayerPrefs.GetFloat("Highscore") > sayac)
+        {
+            SetHighscore();
+        }
+    }
+    public void SetHighscore()
+    {
+        if (levelscore > PlayerPrefs.GetInt("highscore" + Levelnumber))
+        {
+            PlayerPrefs.SetFloat("Highscore" + Levelnumber, sayac);
+        }
+        highscore.text = sayac.ToString("F2");
+
+
+    }
+    private void Update()
+    {
+        if (sayacDevamEdiyorMu)
+        {
+            sayac += Time.deltaTime;
+            timer.text = sayac.ToString("F2");
+        }
+    }
+} 

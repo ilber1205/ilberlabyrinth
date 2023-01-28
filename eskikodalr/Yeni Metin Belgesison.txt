@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
+public class UIController : MonoBehaviour
+{
+    private float sayac = 0;
+    public TMP_Text timer;
+    public TMP_Text highscore;
+    bool sayacDevamEdiyorMu = true;
+    private float lastcalltime;
+    void Start()
+    {
+        highscore.text = PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "Highscore").ToString("F2");
+    }
+    public void Ilber()
+    {
+        StopTimer();
+    }
+    public void StopTimer()
+    {
+        sayacDevamEdiyorMu = false;
+        float karsilastir;
+        karsilastir = PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "Highscore");
+        if (karsilastir > sayac)
+        {
+            SetHighscore();
+        }
+        else if (karsilastir <= 0)
+        {
+            SetHighscore();
+        }
+    }
+    public void SetHighscore()
+    {
+        PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "Highscore", sayac);
+        highscore.text = sayac.ToString("F2");
+    }
+    void arda()
+    {
+        if (sayacDevamEdiyorMu)
+        {
+            sayac += Time.deltaTime;
+            timer.text = sayac.ToString("F2");
+        }
+    }
+    private void Update()
+    {
+        if (Time.time - lastcalltime >= 0.2f)
+        {
+            arda();
+        }
+    }
+}

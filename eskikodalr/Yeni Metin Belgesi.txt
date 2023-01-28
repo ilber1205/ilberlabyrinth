@@ -1,0 +1,35 @@
+public class Pause : MonoBehaviour
+{
+    [SerializeField] GameObject durmaekrani;
+    public static bool isGamePaused = false;
+    public void OnApplicationPause()
+    {
+        StopGame();
+    }
+    public void ilber()
+    {
+        if (durmaekrani.activeSelf == true)
+        {
+            if (isGamePaused)
+            {
+                StopGame();
+            }
+            else
+            {
+                ResumeGame();
+            }
+        }
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f;
+        durmaekrani.SetActive(false);
+        isGamePaused = false;
+    }
+    public void StopGame()
+    {
+        Time.timeScale = 0f;
+        durmaekrani.SetActive(true);
+        isGamePaused = true;
+    }
+}

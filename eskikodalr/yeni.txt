@@ -1,0 +1,43 @@
+save trigger
+
+public class SaveTrigger : MonoBehaviour
+{
+    public void LoadLevel()
+    {
+        if (PlayerPrefs.HasKey("level"))
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("level", +1));
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
+}
+
+
+diğeri
+public class CagirmaLoadEndscreen : MonoBehaviour
+{
+    public UIController abcd;
+    public GameObject Endscreen;
+    int level;
+    private void Start()
+    {
+        level = SceneManager.GetActiveScene().buildIndex;
+        abcd = GameObject.Find("abcd").GetComponent<UIController>();
+    }
+    void OnLevelComplete()
+    {
+        PlayerPrefs.SetInt("level", level);
+        if (level == SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(1); 
+        }
+    } 
+    private void OnTriggerEnter(Collider other)
+    {
+        Endscreen.SetActive(true);
+        abcd.Ilber();
+        OnLevelComplete();
+ 

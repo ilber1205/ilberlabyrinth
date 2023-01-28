@@ -1,0 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
+public class CagirmaLoadEndscreen : MonoBehaviour
+{
+    public UIController abcd;
+    public GameObject Endscreen;
+    private void Start()
+    {
+        abcd = GameObject.Find("abcd").GetComponent<UIController>();
+    }
+    void OnLevelComplete()
+    {
+        int numbOfCompletedLevels = PlayerPrefs.GetInt("completedlevelcount", 0);
+        PlayerPrefs.SetInt("completedlevelcount", numbOfCompletedLevels + 1);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Endscreen.SetActive(true);
+        abcd.Ilber();
+        OnLevelComplete();
+    }
+}
