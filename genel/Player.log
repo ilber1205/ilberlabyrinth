@@ -1,0 +1,207 @@
+SETUP - COM already setup - threaded VI might not be possible 
+(Filename:  Line: 1352)
+
+Initialize engine version: 2019.4.36f1 (660c164b2fc5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Get Lost!/Get Lost_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+d3d11: CreateDXGIFactory2(...) not found, fallbacking to CreateDXGIFactory1(...).
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: Mobile Intel(R) 45 Express Yonga Kümesi Ailesi (Microsoft Corporation - WDDM 1.1) (ID=0x2a42)
+    Vendor:   (null)
+    VRAM:     732 MB
+    Driver:   8.15.10.1749
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+d3d11: failed to create 2D texture id=66 width=512 height=287 mips=1 dxgifmt=28 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=66 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create 2D texture id=68 width=886 height=858 mips=1 dxgifmt=28 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=68 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create 2D texture id=74 width=512 height=287 mips=1 dxgifmt=28 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=74 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create 2D texture id=78 width=1024 height=1024 mips=1 dxgifmt=65 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=78 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create 2D texture id=58 width=512 height=512 mips=1 dxgifmt=77 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=58 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create 2D texture id=70 width=128 height=128 mips=1 dxgifmt=77 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=70 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+d3d11: failed to create buffer (target 0x1 mode 0 size 110016) [0x887A0005]
+d3d11: failed to create buffer (target 0x2 mode 0 size 15624) [0x887A0005]
+d3d11: failed to create Cube texture id=80 s=16 mips=5 d3dfmt=10 [887a0005]
+d3d11: failed to create Cube texture view id=80 [80070057]
+d3d11: failed to create 2D texture id=76 width=512 height=512 mips=1 dxgifmt=65 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=76 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+D3D shader create error for vertex shader [0x887a0005]
+D3D shader create error for pixel shader [0x887a0005]
+d3d11: failed to create 2D texture id=72 width=256 height=256 mips=1 dxgifmt=65 [D3D error was 887a0005]
+ 
+(Filename:  Line: 587)
+
+d3d11: failed to create 2D texture shader resource view id=72 [D3D error was 80070057]
+ 
+(Filename:  Line: 537)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;C:\Program Files\Get Lost!;C:\Program Files\Get Lost!;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'user'
+OS-Version: 6.1.0
+C:\Program Files\Get Lost!\Get Lost.exe:Get Lost.exe (00160000), size: 655360 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2019.4.36.3094
+C:\Windows\SYSTEM32\ntdll.dll:ntdll.dll (77440000), size: 1318912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\kernel32.dll:kernel32.dll (76800000), size: 872448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\KERNELBASE.dll:KERNELBASE.dll (75380000), size: 307200 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Program Files\Get Lost!\UnityPlayer.dll:UnityPlayer.dll (5CB40000), size: 20983808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2019.4.36.3094
+C:\Windows\system32\USER32.dll:USER32.dll (76B70000), size: 823296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23594
+C:\Windows\system32\GDI32.dll:GDI32.dll (77010000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23914
+C:\Windows\system32\LPK.dll:LPK.dll (775D0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23930
+C:\Windows\system32\USP10.dll:USP10.dll (773A0000), size: 643072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.626.7601.23894
+C:\Windows\system32\msvcrt.dll:msvcrt.dll (772A0000), size: 704512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.7601.17744
+C:\Windows\system32\VERSION.dll:VERSION.dll (747E0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\ole32.dll:ole32.dll (75680000), size: 1429504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23889
+C:\Windows\system32\RPCRT4.dll:RPCRT4.dll (775E0000), size: 663552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\SHLWAPI.dll:SHLWAPI.dll (764C0000), size: 356352 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\SETUPAPI.dll:SETUPAPI.dll (769D0000), size: 1691648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\CFGMGR32.dll:CFGMGR32.dll (75520000), size: 159744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\ADVAPI32.dll:ADVAPI32.dll (76920000), size: 659456 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\SYSTEM32\sechost.dll:sechost.dll (764A0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\OLEAUT32.dll:OLEAUT32.dll (76F70000), size: 593920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23775
+C:\Windows\system32\DEVOBJ.dll:DEVOBJ.dll (755B0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\SHELL32.dll:SHELL32.dll (75840000), size: 12894208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23893
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (63640000), size: 819200 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\GLU32.dll:GLU32.dll (69CF0000), size: 139264 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (63550000), size: 946176 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (73C90000), size: 24576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23930
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (738F0000), size: 77824 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINMM.dll:WINMM.dll (70960000), size: 204800 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\IMM32.dll:IMM32.dll (77590000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MSCTF.dll:MSCTF.dll (76550000), size: 839680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23915
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (70860000), size: 360448 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23451
+C:\Windows\system32\webio.dll:webio.dll (70810000), size: 323584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17725
+C:\Windows\system32\bcrypt.dll:bcrypt.dll (74E80000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\HID.DLL:HID.DLL (73A10000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\CRYPT32.dll:CRYPT32.dll (753F0000), size: 1187840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24382
+C:\Windows\system32\MSASN1.dll:MSASN1.dll (75360000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WS2_32.dll:WS2_32.dll (768E0000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23451
+C:\Windows\system32\NSI.dll:NSI.dll (775B0000), size: 24576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23889
+C:\Windows\system32\apphelp.dll:apphelp.dll (75220000), size: 311296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\AppPatch\AcLayers.DLL:AcLayers.DLL (65C00000), size: 577536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17974
+C:\Windows\system32\SspiCli.dll:SspiCli.dll (751F0000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\USERENV.dll:USERENV.dll (753D0000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\profapi.dll:profapi.dll (75350000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINSPOOL.DRV:WINSPOOL.DRV (71130000), size: 331776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MPR.dll:MPR.dll (71270000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\AppPatch\AcGenral.DLL:AcGenral.DLL (61650000), size: 2199552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23809
+C:\Windows\system32\UxTheme.dll:UxTheme.dll (74200000), size: 262144 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\samcli.dll:samcli.dll (72FB0000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MSACM32.dll:MSACM32.dll (731A0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\sfc.dll:sfc.dll (6CF40000), size: 12288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\sfc_os.DLL:sfc_os.DLL (72200000), size: 53248 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\urlmon.dll:urlmon.dll (76620000), size: 1355776 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.9600.18858
+C:\Windows\system32\api-ms-win-downlevel-ole32-l1-1-0.dll:api-ms-win-downlevel-ole32-l1-1-0.dll (75370000), size: 16384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\api-ms-win-downlevel-shlwapi-l1-1-0.dll:api-ms-win-downlevel-shlwapi-l1-1-0.dll (755E0000), size: 16384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\api-ms-win-downlevel-advapi32-l1-1-0.dll:api-ms-win-downlevel-advapi32-l1-1-0.dll (755D0000), size: 20480 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\api-ms-win-downlevel-user32-l1-1-0.dll:api-ms-win-downlevel-user32-l1-1-0.dll (755A0000), size: 16384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\api-ms-win-downlevel-version-l1-1-0.dll:api-ms-win-downlevel-version-l1-1-0.dll (75590000), size: 16384 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\api-ms-win-downlevel-normaliz-l1-1-0.dll:api-ms-win-downlevel-normaliz-l1-1-0.dll (75550000), size: 12288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\normaliz.DLL:normaliz.DLL (76490000), size: 12288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\iertutil.dll:iertutil.dll (77060000), size: 2314240 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.9600.18858
+C:\Windows\system32\WININET.dll:WININET.dll (76C40000), size: 2797568 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 11.0.9600.18858
+C:\Windows\AppPatch\AcXtrnal.DLL:AcXtrnal.DLL (613F0000), size: 2461696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\SHUNIMPL.DLL:SHUNIMPL.DLL (69DA0000), size: 24576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\SortWindows6Compat.dll:SortWindows6Compat.dll (69750000), size: 69632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\api-ms-win-core-synch-l1-2-0.DLL:api-ms-win-core-synch-l1-2-0.DLL (71610000), size: 12288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.10586.1171
+C:\Windows\system32\tmumh\20019\AddOn\8.53.0.1060\TmUmEvt.dll:TmUmEvt.dll (71620000), size: 1654784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 8.53.0.1060
+C:\Windows\system32\PSAPI.DLL:PSAPI.DLL (775C0000), size: 20480 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\tmumh\20019\TmMon\2.8.0.1047\tmmon.dll:tmmon.dll (714B0000), size: 1413120 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.8.0.1047
+C:\Windows\system32\bcryptprimitives.dll:bcryptprimitives.dll (74DE0000), size: 249856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23451
+C:\Program Files\Get Lost!\GameAssembly.dll:GameAssembly.dll (5FF80000), size: 11161600 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (737C0000), size: 114688 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (73770000), size: 28672 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.23889
+C:\Windows\system32\CRYPTBASE.dll:CRYPTBASE.dll (75270000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24384
+C:\Windows\system32\d3d11.dll:d3d11.dll (70B70000), size: 1527808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16570
+C:\Windows\system32\dxgi.dll:dxgi.dll (70E90000), size: 311296 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.16492
+C:\Windows\system32\WINTRUST.dll:WINTRUST.dll (75560000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24382
+C:\Windows\system32\igd10umd32.dll:igd10umd32.dll (70410000), size: 2564096 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 8.15.10.1749
+C:\Windows\system32\CLBCatQ.DLL:CLBCatQ.DLL (05F80000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.8530.16385
+C:\Windows\system32\CRYPTSP.dll:CRYPTSP.dll (74D10000), size: 94208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24382
+C:\Windows\system32\rsaenh.dll:rsaenh.dll (74AA0000), size: 241664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\RpcRtRemote.dll:RpcRtRemote.dll (752E0000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\System32\PROPSYS.dll:PROPSYS.dll (74240000), size: 1003520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.7601.17514
+C:\Windows\System32\MMDevApi.dll:MMDevApi.dll (73DA0000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\AUDIOSES.DLL:AUDIOSES.DLL (731C0000), size: 221184 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.24382
+C:\Windows\system32\wbem\wbemprox.dll:wbemprox.dll (687B0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\wbemcomn.dll:wbemcomn.dll (68860000), size: 376832 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\wbem\wbemsvc.dll:wbemsvc.dll (6D250000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\wbem\fastprox.dll:fastprox.dll (685E0000), size: 614400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+C:\Windows\system32\NTDSAPI.dll:NTDSAPI.dll (68590000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7600.16385
+C:\Windows\system32\igdumd32.dll:igdumd32.dll (61030000), size: 3870720 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 8.15.10.1749
+C:\Windows\system32\D3D10Level9.dll:D3D10Level9.dll (62F20000), size: 634880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.2.9200.21830
+C:\Windows\system32\xinput1_3.dll:xinput1_3.dll (06650000), size: 90112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 9.18.944.0
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (70720000), size: 962560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.1.7601.17514
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x70C123DE (d3d11) D3D11CreateDeviceAndSwapChain
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Geçersiz adrese erişim isteği.' (Address: 5CEAEF05)
+0x5CEAEF05 (UnityPlayer) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Geçersiz adrese erişim isteği.' (Address: 5CEA88A6)
+0x5CEA88A6 (UnityPlayer) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Geçersiz adrese erişim isteği.' (Address: 5CF223D9)
+0x5CF223D9 (UnityPlayer) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Geçersiz adrese erişim isteği.' (Address: 5CF2801D)
+0x5CF2801D (UnityPlayer) (function-name not available)
+  ERROR: SymGetSymFromAddr64, GetLastError: 'Geçersiz adrese erişim isteği.' (Address: 5CF280D9)
+0x5CF280D9 (UnityPlayer) (function-name not available)
+0x5D1BE416 (UnityPlayer) UnityMain
+0x7684EF6C (kernel32) BaseThreadInitThunk
+0x774A3618 (ntdll) RtlInitializeExceptionChain
+0x774A35EB (ntdll) RtlInitializeExceptionChain
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/user/AppData/Local/Temp/ilber/Get Lost/Crashes
