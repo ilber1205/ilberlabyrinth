@@ -1,0 +1,141 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+[RequireComponent(typeof(headbob))]
+public class FirstPersonController : MonoBehaviour
+{
+    public CharacterController controller;
+    [SerializeField] private Transform cameraTransform;
+    [SerializeField] private CharacterController characterController;
+    [SerializeField] private float cameraSensitivity;
+    [SerializeField] private float moveSpeed;
+    private int leftFingerId, rightFingerId;
+    private float halfScreenWidth;
+    private Vector2 lookInput;
+    private float cameraPitch;
+    private Vector2 moveTouchStartPosition;
+    private Vector2 moveInput;
+    public float mouseSensitivity = 800f;
+    public Transform playerBody;
+    float xRotation = 0f;
+    public float speed = 3.4f;
+    private headbob cb;
+    void Start()
+    {
+        cb = GetComponent<headbob>();
+        Cursor.lockState = CursorLockMode.Locked;
+
+        //bilerek boşluk aşağısı mobile
+        //leftFingerId = -1;
+        //rightFingerId = -1;
+       // halfScreenWidth = Screen.width / 2;
+    }
+    void Update()
+    {
+        //GetTouchInput();
+        //if (rightFingerId != -1)
+        //{
+          //  LookAround();
+        //}
+        //if (leftFingerId != -1)
+        //{
+            //Move();
+          //  cb.isWalking = false;
+        //}
+        //else
+        //{
+          //  cb.isWalking = true;
+
+        //}
+
+
+        //bilerek boşluk yukarısı mobile
+        mehmet();
+    }
+    void mehmet()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        xRotation -= mouseY;
+        playerBody.Rotate(Vector3.up * mouseX);
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+        Vector3 move = transform.right * x + transform.forward * z;
+        controller.Move(move * speed * Time.deltaTime);
+
+
+        var direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        transform.Translate(direction * speed * Time.deltaTime);
+         //diğer pclerde oluyorsa bunun kalması gerekiyordu 
+
+
+        if (direction == Vector3.zero)
+        {
+          cb.isWalking = true;
+        }
+        else
+        {
+         cb.isWalking = false;
+        }
+    }
+    //void GetTouchInput()
+    //
+        //for (int i = 0; i < Input.touchCount; i++)
+        //{
+            //Touch t = Input.GetTouch(i);
+            //switch (t.phase)
+            //{
+                //case TouchPhase.Began:
+                    //if (t.position.x < halfScreenWidth && leftFingerId == -1)
+                    //{
+                        //leftFingerId = t.fingerId;
+                      //  moveTouchStartPosition = t.position;
+                    //}
+                    //else if (t.position.x > halfScreenWidth && rightFingerId == -1)
+                    //{
+                      //  rightFingerId = t.fingerId;
+                    //}
+                  //  break;
+                //case TouchPhase.Ended:
+                //case TouchPhase.Canceled:
+                    //if (t.fingerId == leftFingerId)
+                    //{
+                      //  leftFingerId = -1;
+                    //}
+                    //else if (t.fingerId == rightFingerId)
+                    //{
+                      //  rightFingerId = -1;
+                    //}
+                  //  break;
+                //case TouchPhase.Moved:
+
+                    //if (t.fingerId == rightFingerId)
+                    //{
+                      //  lookInput = t.deltaPosition * cameraSensitivity * Time.deltaTime;
+                    //}
+                    //else if (t.fingerId == leftFingerId)
+                    //{
+                      //  moveInput = t.position - moveTouchStartPosition;
+                    //}
+                  //  break;
+                //case TouchPhase.Stationary:
+                  //  if (t.fingerId == rightFingerId)
+                //    {
+              //          lookInput = Vector2.zero;
+            //        }
+          //          break;
+        //    }
+      //  }
+    //}
+    //void LookAround()
+    //{
+        //cameraPitch = Mathf.Clamp(cameraPitch - lookInput.y, 360f, 360f);
+        //cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
+      //  transform.Rotate(transform.up, lookInput.x);
+    //}
+    //void Move()
+    //{
+        //Vector2 movementDirection = moveInput.normalized * moveSpeed * Time.deltaTime;
+      //  characterController.Move(transform.right * movementDirection.x + transform.forward * movementDirection.y);
+    //}
+}
