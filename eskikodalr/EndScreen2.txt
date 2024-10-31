@@ -1,0 +1,63 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class EndScreen2 : MonoBehaviour
+{
+    private GameObject endScreenPanel; // Sahnedeki inaktif EndScreen paneli
+
+    private void Awake()
+    {
+        // Tüm root objeleri tara
+        foreach (GameObject rootObject in SceneManager.GetActiveScene().GetRootGameObjects())
+        {
+            // Eğer root obje bir Canvas ise, onun alt objelerinde arama yap
+            Canvas canvas = rootObject.GetComponent<Canvas>();
+            if (canvas != null)
+            {
+                endScreenPanel = FindInactiveObjectByName(rootObject.transform, "Endscreen1");
+
+                if (endScreenPanel != null)
+                {
+                    break;
+                }
+            }
+        }
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ActivateEndScreen();
+        }
+    }
+
+    public void ActivateEndScreen()
+    {
+        if (endScreenPanel != null)
+        {
+            endScreenPanel.SetActive(true); 
+            Time.timeScale = 0; 
+        }
+    }
+
+    // Alt objelerde arama yapmak için yardımcı fonksiyon
+    private GameObject FindInactiveObjectByName(Transform parent, string name)
+    {
+        foreach (Transform child in parent)
+        {
+            if (child.name == name)
+                return child.gameObject;
+
+            GameObject result = FindInactiveObjectByName(child, name);
+            if (result != null)
+                return result;
+        }
+        return null;
+    }
+}
+
